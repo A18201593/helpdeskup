@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Helpdesk</string>
+    <string name="app_login"></string>
+    <string name="et_nombre">Usuario</string>
+    <string name="et_clave">Contraseña</string>
+    <string name="boton">INGRESAR</string>
+    <string name="et_Asun">Asunto</string>
+    <string name="et_Det">Ingrese aquí su solicitud</string>
+    <string name="et_olvi">¿Olvidaste tu contraseña?</string>
+    <string name="et_login">LOGIN</string>
+
+</resources>

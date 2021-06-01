@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_Logo"
+        android:layout_width="368dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pacifico" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Logo">
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_nombre"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="333dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/txt_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_clave"
+            android:inputType="textPassword" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="220dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_border"
+        android:text="@string/boton"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759"
+
+        />
+
+    <TextView
+        android:id="@+id/textView_Olvidaste"
+        android:layout_width="233dp"
+        android:layout_height="42dp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:text="@string/et_olvi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Logo"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+        android:id="@+id/textView_Login"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/et_login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_Logo"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
